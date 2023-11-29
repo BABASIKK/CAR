@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .city {
+    background: url('./dubai.png') repeat-x; 
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .car {
+    background: url('./mercedes.png') no-repeat; 
+    background-size: contain;
+    height: 450px;
+    width: 500px;
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    animation: carAnimation 5s linear infinite;
+  }
+  
+  @keyframes roadAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes carAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
